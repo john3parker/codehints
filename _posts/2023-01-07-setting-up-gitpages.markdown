@@ -75,15 +75,63 @@ Now it's time to create a `git repository`, add your website files to it and con
 ## Github
 Login to [Github](https://github.com/) create a new repository. Name your repository whatever you'd like. Make sure you have selected this to be a **Public** repository -- only public repository can use Github Pages. Leave all the other defaults and press **Create Repository**.
 
+It's time to create the local repository, add and commit the files and link the local repository to the remote repository on Github. In the `git remote add origin` command, make sure you replace your actual username & repository name. 
+
 {% highlight javascript %}
 echo "# MySite" >> README.md
 git init
 git add .
 git commit -m "first commit"
-git branch -M main
 git remote add origin https://github.com/USERNAME/REPOSITORY-NAME.git
 git push -u origin main
 {% endhighlight %}
+
+After you've executed the `git add .` command, you can use the `git status` command to get a status of all the files to be commited in the next step.
+
+{% highlight javascript %}
+$ git add .
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   404.html
+	new file:   Gemfile
+	new file:   Gemfile.lock
+	new file:   README.md
+	new file:   _config.yml
+	new file:   _posts/2023-01-07-welcome-to-jekyll.markdown
+	new file:   about.markdown
+	new file:   index.markdown
+{% endhighlight %}
+
+The final command synchronizes your local changes with the remote Github repository. This is sample output of the final command.
+
+{% highlight javascript %}
+$ git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (21/21), 8.52 KiB | 8.52 MiB/s, done.
+Total 21 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/USERNAME/REPOSITORY-NAME.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+{% endhighlight %}
+
+## Github Pages
+It's time to enable github Pages for your website repository. Open your browser, login to Github and browse to your repository. Go the `Settings` tab and find `Pages` on the left-hand column. 
+
+The source will be `Deploy from a branch`. Select the `master` branch or whatever branch you decided to call yours. Use the `/root` folder ans press save. Give it 5 minutes or so and browse to your website. 
+
+https://USERNAME.github.io/REPOSITORY-NAME
+
+
 
 ## Old stuff
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. 
