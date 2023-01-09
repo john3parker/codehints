@@ -2,7 +2,7 @@
 layout: post
 title:  "Quickly Resize Images"
 date:   2023-01-09 9:30:00 -0600
-categories: github config
+categories: pictures sizing
 ---
 
 Want to quickly resize a large number of images? This useful command will save your hours of effort. 
