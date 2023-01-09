@@ -2,7 +2,7 @@
 layout: post
 title:  "Set up a site with Github Pages and Jekyll Tutorial"
 date:   2023-01-07 21:17:21 -0600
-categories: jekyll update
+categories: jekyll config
 ---
 By leveraging Jekyll and Github Pages, you can quickly and easily set up a website for documentation or a simple blog. Jekyll is a static page generator capable of generating just about any data format including HTML. Write pages in markdown and Jekyll will build the HTML pages on your configuration, theme and layouts. By coupling this powerful tool with a Github repository and pages, you now have a powerful way to generic a website.
 
