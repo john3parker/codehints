@@ -1,0 +1,12 @@
+---
+
+---
+{%- for post in site.posts -%}
+{
+  "name": "{{ post.title }}",
+  "date": "{{ post.date | date: date_format }}",
+  "url":  "{{ post.url | relative_url }}",
+  "excerpt": "{{ post.excerpt | url_encode }}",
+}
+
+{%- endfor -%}

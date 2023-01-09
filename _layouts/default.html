@@ -3,12 +3,12 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="d-flex flex-column h-100">
 
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main class="flex-shrink-0" aria-label="Content">
+      <div class="container">
         {{ content }}
       </div>
     </main>

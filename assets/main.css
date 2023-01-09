@@ -1,0 +1,4 @@
+@import "css/highlight-monokai.css";
+.highlight pre {
+    padding: 1rem!important;
+}
