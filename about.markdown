@@ -6,8 +6,8 @@ permalink: /about/
 
 ### John Parker
 <div class="row">
-    <div class="col-2"><img src="/assets/img/john-parker-profile.png" alt="Github " class="img-fluid"></div>
-    <div class="col-10">
+    <div class="col-6 col-md-4 col-lg-2"><img src="/assets/img/john-parker-profile.png" alt="Github " class="img-fluid"></div>
+    <div class="col-12 col-md-8 col-lg-10">
         <p>
             I’m a native Arkansan and a career software engineer with over 25 years of experience. I’m a career software engineer and have been fortunate enough to have worked at several Fortune 100 companies.
         </p>

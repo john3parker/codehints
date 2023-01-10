@@ -3,19 +3,23 @@ layout: default
 ---
 
 <div class="container">
-  <div style="max-height: 250px; overflow:hidden;">
+  <div class="header-image text-center position-relative text-light" xstyle="max-height: 250px; overflow:hidden;">
     <img src="/assets/img/home-header-image.jpg" class="img-fluid" title=""/>
     Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/70Rir5vB96U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+
+    {%- if page.title -%}
+    <h1 class="header-image-text">{{ page.title }}</h1>
+    {%- endif -%}
+    {%- if site.posts.size > 0 -%}
+    <h1 class="header-image-text">{{ page.list_title | default: "Posts" }}</h1>
+    {%- endif -%}
+
   </div>
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <!--h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2-->
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>

@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <div class="header-image text-center position-relative text-light" xstyle="max-height: 250px; overflow:hidden;">
+    <img src="/assets/img/post-header.jpg" class="img-fluid" title=""/>
+    Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/photos/70Rir5vB96U?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+    {%- if page.title -%}
+    <h1 class="header-image-text" itemprop="name headline">{{ page.title  | escape}}</h1>
+    {%- endif -%}
+    Photo by <a href="https://unsplash.com/es/@walkator?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Walkator</a> on <a href="https://unsplash.com/photos/klMii3cR9iI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+  </div>
+
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}

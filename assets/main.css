@@ -2,3 +2,31 @@
 .highlight pre {
     padding: 1rem!important;
 }
+
+.header-image {
+    max-height: 100px;
+    overflow: hidden;
+}
+
+.header-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px)
+{
+    .header-image {
+        max-height: 150px;
+        overflow: hidden;
+    }    
+}
+
+@media (min-width: 992px)
+{
+    .header-image {
+        max-height: 200px;
+        overflow: hidden;
+    }
+}
