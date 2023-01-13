@@ -1,4 +1,7 @@
-@import "css/highlight-monokai.css";
+@import "./highlight-monokai.css";
+a {
+    text-decoration: none;
+}
 .highlight pre {
     padding: 1rem!important;
 }

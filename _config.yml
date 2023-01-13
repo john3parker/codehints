@@ -28,6 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+permalink: /:categories/:year/:month/:title:output_ext
 
 # Build settings
 #theme: "minima"
@@ -35,7 +36,8 @@ github_username:  jekyll
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-#minima:
+minima:
+  date_format: "%b %Y"
 #  date_format: "%b %-d, %Y"
 
 #header_pages:
