@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "Spring Security part 1"
-date:   2023-01-10 11:54:21 -0600
+title:  "Spring Security part 1 - Configuration"
+date:   2023-01-11 11:00:00 -0600
 categories: spring framework
-published: false
+published: true
 ---
 Spring Security is a well made and powerful authentication and authorization framework used for securing Spring-based applications. The underlying value is how quickly and easily it can be configured and extended to meet most business requirements. However, because it's so configurable it can be daunting to set up and understand how to quickly get it running for your application. This 5 part series will take you through a real-world example from start to finish. 
 
-# Overview
-* [Spring Security](/spring/framework/2023/01/spring-security)
-* Part 1 - Security configuration
-* Part 2 - [How to handle UserDetails gracefully](/spring/framework/2023/01/spring-security-part2)
-* Part 3 - Setting up User/Pass and OAuth authentication
-* Part 4 - Handling GrantedAuthorities with custom roles/permissions.
-* Part 5 - Security tags for Freemarker
+# Other Articles
+* Architecture - [Spring Security Architecture](/spring/framework/2023/01/spring-security-overview.html)
+* Part 1 - [Security configuration](/spring/framework/2023/01/spring-security-part1-config.html)
+* Part 2 - [How to handle UserDetails gracefully](/spring/framework/2023/01/spring-security-part2-UserDetails.html)
+* Part 3 - [UserDetails for OAuth authentication](/spring/framework/2023/01/spring-security-part3-OidcUser.html)
+* Part 4 - [Handling GrantedAuthorities with custom roles/permissions](/spring/framework/2023/01/spring-security-part4-GrantedAuthority.html)
+* Part 5 - [Security tags for Freemarker](/spring/framework/2023/01/spring-security-part5-security-tags.html)
 
 # Prerequistes
 This series on Spring Security uses `Spring 6`. Enable Spring Security by adding the following dependency into your `pom.xml`. 
